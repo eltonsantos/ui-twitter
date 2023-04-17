@@ -12,6 +12,7 @@ import {
   FileText,
   Hash,
   House,
+  Sparkle,
   User,
 } from "phosphor-react";
 
@@ -58,7 +59,27 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           Tweet
         </button>
       </aside>
-      <div className="content">content</div>
+      <div className="content">
+        <main className="timeline">
+          <div className="timeline-header">
+            Home
+            <Sparkle />
+          </div>
+
+          <form className="new-tweet-form">
+            <label htmlFor="tweet">
+              <img
+                src="https://github.com/eltonsantos.png"
+                alt="Elton Santos"
+              />
+              <textarea id="tweet" placeholder="What's happening?" />
+            </label>
+            <button type="submit">Tweet</button>
+          </form>
+
+          <div className="separator" />
+        </main>
+      </div>
     </div>
   </React.StrictMode>
 );
