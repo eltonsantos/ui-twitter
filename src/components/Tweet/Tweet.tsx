@@ -1,7 +1,11 @@
 import { ArrowClockwise, ChatCircle, Heart } from "phosphor-react";
 import "./Tweet.css";
 
-export function Tweet() {
+interface TweetProps {
+  content: string;
+}
+
+export function Tweet(props: TweetProps) {
   return (
     <a href="" className="tweet">
       <img src="https://github.com/eltonsantos.png" alt="Elton Santos" />
@@ -12,12 +16,7 @@ export function Tweet() {
           <span>@eltonsantos</span>
         </div>
 
-        <p>
-          Estou fazendo um projeto bem legal que é tentar criar a user interface
-          do Twitter. Basicamente estou tentando fazer o clone da interface.
-          Está ficando irado, estou seguindo o tutorial da Rocketseat, nesse
-          link aqui: https://www.youtube.com/watch?v=99okStmx-7c
-        </p>
+        <p>{props.content}</p>
 
         <div className="tweet-content-footer">
           <button type="button">
