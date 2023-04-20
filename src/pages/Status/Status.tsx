@@ -1,6 +1,6 @@
-import { Header } from "../components/Header/Header";
-import { Separator } from "../components/Separator/Separator";
-import { Tweet } from "../components/Tweet/Tweet";
+import { Header } from "../../components/Header/Header";
+import { Separator } from "../../components/Separator/Separator";
+import { Tweet } from "../../components/Tweet/Tweet";
 
 import "./Status.css";
 
